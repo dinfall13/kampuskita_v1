@@ -1,17 +1,17 @@
-# kampuskita_v1
+# KampusKita App
 
-A new Flutter project.
+Aplikasi informasi akademik mahasiswa berbasis Flutter untuk memudahkan akses jadwal perkuliahan, tugas, dan pengumuman kampus dalam satu platform.
 
-## Getting Started
+## Fitur Saat Ini (v0.0)
+- Tampilan halaman beranda (*Home*) dengan identitas aplikasi.
+- Kartu pratinjau informasi untuk **Jadwal Perkuliahan** dan **Pengumuman Kampus**.
+- Desain antarmuka responsif berbasis Material Design 3.
 
-This project is a starting point for a Flutter application.
+## Tangkapan Layar
+![Tampilan Awal v0.0](assets/screenshots/v0_home.png)
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Cara Menjalankan Aplikasi
+1. Pastikan Flutter SDK sudah terinstal dan terdeteksi (`flutter doctor`).
+2. Unduh dependensi proyek dengan perintah:
+   ```bash
+   flutter pub get
