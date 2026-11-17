@@ -82,7 +82,7 @@ class HomePage extends StatelessWidget {
                               ),
                             ),
                             Text(
-                              'Mahasiswa KampusKita',
+                              'Naufal Daulah Imana',
                               style: TextStyle(
                                 fontSize: 16,
                                 fontWeight: FontWeight.bold,
@@ -90,7 +90,7 @@ class HomePage extends StatelessWidget {
                             ),
                             SizedBox(height: 2),
                             Text(
-                              'NIM: 2026000123',
+                              'NIM: 2410651051',
                               style: TextStyle(
                                 fontSize: 13,
                                 color: Colors.black87,

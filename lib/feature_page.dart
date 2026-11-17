@@ -94,7 +94,7 @@ class _FeaturePageState extends State<FeaturePage> {
                     ),
                     const SizedBox(height: 12),
                     DropdownButtonFormField<String>(
-                      value: selectedCategory,
+                      initialValue: selectedCategory,
                       decoration: const InputDecoration(
                         labelText: 'Kategori',
                         border: OutlineInputBorder(),
