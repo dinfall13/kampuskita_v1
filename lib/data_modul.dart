@@ -1,10 +1,10 @@
-class AcademicItem {
+class DataModul {
   final String id;
   String title;
   String scheduleOrDetail;
   String category;
 
-  AcademicItem({
+  DataModul({
     required this.id,
     required this.title,
     required this.scheduleOrDetail,

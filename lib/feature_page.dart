@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'academic_item.dart';
+import 'data_modul.dart';
 import 'profile_page.dart';
 
 class FeaturePage extends StatefulWidget {
@@ -16,24 +16,29 @@ class FeaturePage extends StatefulWidget {
 
 class _FeaturePageState extends State<FeaturePage> {
   // 1. List penyimpanan sementara berisi mock data awal (Read)
-  final List<AcademicItem> _items = [
-    AcademicItem(
+  final List<DataModul> _items = [
+    DataModul(
       id: '1',
       title: 'Pemrograman Mobile (Flutter)',
       scheduleOrDetail: 'Senin, 08:00 - 10:30 WIB • Lab Komputer 2',
       category: 'Jadwal Kuliah',
     ),
-    AcademicItem(
+    DataModul(
       id: '2',
       title: 'Basis Data Lanjut',
       scheduleOrDetail: 'Rabu, 10:30 - 13:00 WIB • Ruang B.304',
       category: 'Jadwal Kuliah',
     ),
-    AcademicItem(
+    DataModul(
       id: '3',
       title: 'Tugas Praktikum Bab 6 (CRUD)',
       scheduleOrDetail: 'Deadline: Minggu, 23:59 WIB',
       category: 'Tugas Akademik',
+    ), DataModul(
+      id: '4',
+      title: 'Uts Pemrograman Bergerak',
+      scheduleOrDetail: 'Selasa, 07.50 - 11.09 | Lab Komputer Cc lt 04-1A',
+      category: 'UTS',
     ),
   ];
 
@@ -50,7 +55,7 @@ class _FeaturePageState extends State<FeaturePage> {
   }
 
   // Dialog Form untuk Tambah (Create) & Ubah Data (Update)
-  void _showItemFormDialog({AcademicItem? existingItem, int? index}) {
+  void _showItemFormDialog({DataModul? existingItem, int? index}) {
     final isEdit = existingItem != null;
     final titleController = TextEditingController(
       text: isEdit ? existingItem.title : '',
@@ -142,7 +147,7 @@ class _FeaturePageState extends State<FeaturePage> {
                       } else {
                         // Proses CREATE
                         _items.add(
-                          AcademicItem(
+                          DataModul(
                             id: DateTime.now().millisecondsSinceEpoch.toString(),
                             title: title,
                             scheduleOrDetail: detail,
